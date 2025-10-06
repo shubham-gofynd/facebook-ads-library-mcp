@@ -3,7 +3,8 @@ region: asia-south1
 entrypoint: "serverless_app.py"
 
 build:
-  builtin: dockerfile
+  builtin: python
+  version: "3.11"
 
 env:
   PORT: "8080"

@@ -4,8 +4,7 @@ entrypoint: "serverless_app.py"
 
 build:
   builtin: python
-  version: "3.10"
-  builder: "gcr.io/buildpacks/builder:v1"
+  version: "3.11"
 
 env:
   PORT: "8080"

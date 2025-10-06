@@ -1,6 +1,6 @@
 # Core MCP dependencies
-mcp>=1.9.2
-fastmcp>=2.10
+mcp>=1.16.0
+fastmcp>=2.12
 starlette>=0.36
 uvicorn>=0.30
 
@@ -8,10 +8,8 @@ uvicorn>=0.30
 requests>=2.32.3
 httpx>=0.28.1
 
-# Web crawling and scraping
-crawl4ai>=0.7.0
+# HTML parsing (replacement for Crawl4AI)
 beautifulsoup4>=4.12.2
-selenium>=4.15.0
 
 # Data processing and analysis
 pandas>=2.0.0
@@ -19,11 +17,11 @@ numpy>=1.24.0
 
 # Environment and configuration
 python-dotenv>=1.1.0
-pydantic<2.0                     # <<< CHANGED: pin to <2.0 for Config syntax compatibility >>>
-pydantic-settings<2.0     # <<< CHANGED: ensure works with pydantic v1 >>>
+pydantic>=2.6.0
+pydantic-settings>=2.5.2
 
 # Async support
-aiohttp>=3.8.0                   # <<< CHANGED: removed asyncio (stdlib, not installable) >>>
+aiohttp>=3.8.0
 
 # Text processing and NLP
 regex>=2023.12.25
